@@ -9,18 +9,18 @@
     <keywords>phonegap,calendar</keywords>
 
 
-    <js-module src="www/calendar.js" name="Calendar">
-        <clobbers target="window.calendar" />
+    <js-module src="www/calendar_plugin.js" name="Calendar_plugin">
+        <clobbers target="window.calendar_plugin" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="Calendar">
-                <param name="android-package" value="com.onbond.calendar.Calendar"/>
+            <feature name="Calendar_plugin">
+                <param name="android-package" value="com.onbond.calendar.Calendar_plugin"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/Calendar_plugin.java" target-dir="src/com/onbond/calendar" />      
+        <source-file src="src/android/Calendar_plugin.java" target-dir="src/com/onbond/calendar_plugin" />      
      </platform>          
 </plugin>
